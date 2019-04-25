@@ -1,0 +1,71 @@
+.btn {
+  height: 50px;
+  position: relative;
+  padding-left: 17px;
+  padding-right: 50px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  letter-spacing: 0.01em;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  
+  &::after {
+    content: "";
+    position: absolute;
+    top: 13px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/ic_keyboard_arrow_right_black_24px.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: ease-out 0.3s;
+  }
+  
+  &:hover::after {
+    right: 5px;
+    transition: ease-out 0.3s;
+  }
+  &:hover,
+  &:active {
+    opacity: 0.85;
+  }
+}
+
+.btn--green {
+  color: @green;
+  border-color: @green;
+  
+  &::after {
+    background-image: url(../img/ic_arrow_green.svg);
+  }
+}
+
+.btn--blue {
+  width: 220px;
+  background-color: @green;
+  border-color: @green;
+}
+
+.btn-center {
+  width: 240px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  border: 1px solid @green;
+  border-radius: 5px;
+  background-color: @green;
+  
+  &:hover,
+  &:active {
+    opacity: 0.8;
+  }
+}
