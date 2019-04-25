@@ -1,71 +1,32 @@
 .btn {
   height: 50px;
   position: relative;
-  padding-left: 17px;
-  padding-right: 50px;
+  padding: 0 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: #fff;
+  color: @green;
   font-size: 15px;
   letter-spacing: 0.01em;
-  border: 1px solid #fff;
+  border: 1px solid @green;
   border-radius: 5px;
   
   &::after {
     content: "";
     position: absolute;
-    top: 13px;
-    right: 10px;
-    width: 25px;
-    height: 25px;
-    background-image: url(../img/ic_keyboard_arrow_right_black_24px.svg);
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 14px;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAOAQMAAAAomM/VAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAABlBMVEUAAAABk5F5wanzAAAAAXRSTlMAQObYZgAAACBJREFUCNdjOMDwgKGAwYJBhoGPgR0I+YAsC6DIA4YDAEVYBPPumDwnAAAAAElFTkSuQmCC');
     background-repeat: no-repeat;
     background-size: contain;
     transition: ease-out 0.3s;
   }
   
   &:hover::after {
-    right: 5px;
+    right: 10px;
     transition: ease-out 0.3s;
-  }
-  &:hover,
-  &:active {
-    opacity: 0.85;
-  }
-}
-
-.btn--green {
-  color: @green;
-  border-color: @green;
-  
-  &::after {
-    background-image: url(../img/ic_arrow_green.svg);
-  }
-}
-
-.btn--blue {
-  width: 220px;
-  background-color: @green;
-  border-color: @green;
-}
-
-.btn-center {
-  width: 240px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  font-size: 15px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  border: 1px solid @green;
-  border-radius: 5px;
-  background-color: @green;
-  
-  &:hover,
-  &:active {
-    opacity: 0.8;
   }
 }
