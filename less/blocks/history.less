@@ -1,0 +1,94 @@
+.history {
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 15px 15px 0 rgba(104,104,104,0.64);
+  border-radius: 7px;
+}
+
+.history__title {
+  margin: 0;
+  padding: 0 15px;
+  font-size: 14px;
+  border-bottom: 1px solid #c0c2c4;
+}
+
+.history__slider {
+  height: 335px;
+}
+
+.history__slide {
+  height: auto;
+  box-sizing: border-box;
+}
+
+.history__list {
+  .reset();
+  list-style: none;
+  width: 230px;
+  padding-top: 10px;
+}
+
+.history__item {
+  padding-top: 15px;
+  padding-bottom: 12px;
+  
+  &:hover,
+  &:active,
+  &--active {
+    .history__link {
+      color: #ff9000;
+      .transition();
+    }
+    
+    .history__img {
+      border-color: rgba(255,144,0,0.67);
+      .transition();
+    }
+  }
+}
+
+.history__link {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #4a4a4a;
+  .transition();
+}
+
+.history__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 79px;
+  height: 79px;
+  margin-left: 15px;
+  margin-right: 30px;
+  border-radius: 7px;
+  border: 3px solid #fff;
+  box-shadow: -5px 5px 6px 0 rgba(104,104,104,0.38);
+  overflow: hidden;
+  .transition();
+  
+  img {
+    display: block;
+  }
+}
+
+.swiper-container-vertical>.swiper-scrollbar {
+  width: 11px;
+  background-color: #fff;
+  background-image: linear-gradient(to right, #fff 0%, #fff 4px, #c5c7c8 4px, #c5c7c8 7px, #fff 7px, #fff 100%);
+  border-radius: 0;
+}
+
+.swiper-scrollbar-drag {
+  height: 30px !important;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAWCAYAAAAM2IbtAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAFlJREFUKJHt0rENgDAMRNF/FrMwAMsxQ5bLAFnmqIKsSKZLx7XvZBe2bDPT+jCg+zoBiAUA3PoAQLYz5CgKALDyzjVRyo9b8fg4GQGoMM2xa0EAMZ8pFd7iA3TAHuiu02JtAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7px 22px;
+  border-radius: 4px;
+  background-color: #5b5b5b;
+}

@@ -1,0 +1,60 @@
+.modal {
+  width: 650px;
+  padding: 40px;
+  padding-top: 145px;
+  color: #939393;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 15px 15px 0 rgba(104,104,104,0.64);
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 109px;
+    height: 109px;
+    background-color: #88cdd9;
+    border-radius: 50%;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEMAAABDBAMAAAA15KVAAAAAElBMVEUAAAD///////////////////8+Uq06AAAABXRSTlMAfzzy8954ihYAAABxSURBVEjHY2BABkymoUAQrMCAGyiHgoERbhVMrhAlIbiNYQmFAgecSlhhSgJGlYwqGR5KREPxAVB+YQzFD5wIGQLOvaGEgAFhJQGjSmioxICYaCQiMRCRpEZz46iSEaIEnmEEcLdOoBkmEE8ThxGbIQDyclTGSFp45AAAAABJRU5ErkJggg==');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 67px 67px;
+  }
+  
+  .content__field {
+    width: 275px;
+    height: 330px;
+  }
+  .content__imgs {
+    margin-bottom: 0;
+    margin-top: 35px;
+  }
+}
+
+.modal__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #939393;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.modal__person {
+  margin-top: 50px;
+  font-weight: 900;
+  color: #5b5b5b;
+}
+
+.fancybox-close-small {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAAARnQU1BAACxjwv8YQUAAAABc1JHQgCuzhzpAAAANlBMVEUAAACIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdmIzdngaP9rAAAAEXRSTlMA+korLPlS6i3uQDIQJdJFER2NgL0AAABkSURBVBjTZY9ZEsAgCENjXcC6tNz/snUfx/oB5AUFAdwG46RY46OIu2bKb/GVSCdMIjnClNQItyLNgnkag3i/9CCbLqTa4pf+gfPK+eg59ljM4LJ7q70AZ2l815B1NQc9x+kAfPGOBzQQ1jSGAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 16px 16px;
+  
+  svg {
+    display: none;
+  }
+}
