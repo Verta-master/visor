@@ -1,0 +1,41 @@
+.info {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+
+.info__text {
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  color: #5b5b5b;
+  font-size: 18px;
+  font-weight: 500;
+  
+  ul {
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 21px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 9px;
+        height: 9px;
+        background-color: #76b7e8;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.info__img {
+  margin-top: 35px;
+  margin-bottom: 25px;
+  
+  img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}

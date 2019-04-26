@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Neurovisor</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--internal">
+    <div class="wrapper wrapper--menu">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О системе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">Направления разработки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Демо-версия</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Партнёры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__langs">
+      <a href="#" class="header__lang header__lang--active">Ru</a>
+      <a href="#" class="header__lang">En</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="info">
+      <div class="wrapper">
+        <h1>Направления разработки</h1>
+        <div class="info__text">
+          <p>Первая версия системы обучена на небольшом количестве снимков. Учитывалась только одна фронтальная проекция снимков пациента.</p>
+          <p>Точность системы будет ЗНАЧИТЕЛЬНО улучшена с использованием подробных и максимально детальных дата-сетов (снимки в двух проекциях) и данных медицинских анализов пациента. Система позволяет обучиться выявлению признаков иных заболеваний. Это позволит предоставлять врачу максимально широкий спектр возможных патологий и принимать эффективные меры для подтверждения и лечения заболеваний.</p>
+          <p>Дальнейшая разработка предполагает следующие перспективные направления:</p>
+          <ul>
+            <li>Распознавание МРТ и КТ снимков</li>
+            <li>Распознавание УЗИ снимков</li>
+            <li>Анализ истории болезни</li>
+            <li>Анализ ДНК</li>
+          </ul>
+        </div>
+        <figure class="info__img">
+          <img src="img/images/pic.jpg" alt="Направления разработки">
+        </figure>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer footer--internal">
+    <div class="wrapper wrapper--menu">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О системе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">Направления разработки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Демо-версия</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Партнёры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__langs">
+      <a href="#" class="header__lang header__lang--active">Ru</a>
+      <a href="#" class="header__lang">En</a>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  
+  <!-- Mobile menu -->
+  <script>
+    $('.menu__btn').click(function() {
+      $('.menu').toggleClass('menu--opened');
+      $('.menu__list').slideToggle();
+    })
+  </script>
+</body>
+</html>
