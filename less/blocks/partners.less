@@ -1,0 +1,42 @@
+.partners {
+  padding-bottom: 20px;
+  padding-top: 85px;
+}
+
+.partners__item {
+  margin-bottom: 40px;
+}
+
+.partners__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &:hover,
+  &:active {
+    .partners__info {
+      color: @blue;
+      transition: ease-out 0.3s;
+    }
+  }
+}
+
+.partners__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 216px;
+  height: 216px;
+  border-radius: 50%;
+  background-color: rgba(91,91,91,0.28);
+}
+
+.partners__info {
+  width: ~"calc(100% - 280px)";
+  color: #4b87cf;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  transition: ease-out 0.3s;
+}
