@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Neurovisor</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--internal">
+    <div class="wrapper wrapper--menu">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О системе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Направления разработки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Демо-версия</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">Партнёры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__langs">
+      <a href="#" class="header__lang header__lang--active">Ru</a>
+      <a href="#" class="header__lang">En</a>
+    </div>
+  </header>
+  
+  <main>
+    <section class="partners">
+      <div class="wrapper">
+        <ul class="partners__list">
+          <li class="partners__item">
+            <a href="#" class="partners__link">
+              <figure class="partners__icon">
+                <img src="img/images/logo-1.png" alt="Уральский научно-исследовательский институт фтизиопульмонологии">
+              </figure>
+              <div class="partners__info">
+                <p>Уральский научно-исследовательский институт фтизиопульмонологии - филиал ФГБУ «НМИЦ ФПИ» Минздрава России</p>
+              </div>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#" class="partners__link">
+              <figure class="partners__icon">
+                <img src="img/images/logo-2.png" alt="ЦНИИ Туберкулеза ФГБНУ">
+              </figure>
+              <div class="partners__info">
+                <p>ЦНИИ Туберкулеза ФГБНУ «ЦНИИТ»</p>
+              </div>
+            </a>
+          </li>
+          <li class="partners__item">
+            <a href="#" class="partners__link">
+              <figure class="partners__icon">
+                <img src="img/images/logo-3.png" alt="Aurora project">
+              </figure>
+              <div class="partners__info">
+                <p>Aurora project</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer footer--internal">
+    <div class="wrapper wrapper--menu">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О системе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Направления разработки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Демо-версия</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">Партнёры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__langs">
+      <a href="#" class="header__lang header__lang--active">Ru</a>
+      <a href="#" class="header__lang">En</a>
+    </div>
+  </footer>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  
+  <!-- Mobile menu -->
+  <script>
+    $('.menu__btn').click(function() {
+      $('.menu').toggleClass('menu--opened');
+      $('.menu__list').slideToggle();
+    })
+  </script>
+</body>
+</html>
