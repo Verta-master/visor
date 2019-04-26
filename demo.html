@@ -235,6 +235,13 @@
     $('.sidebar__btn').click(function() {
       $('.sidebar').toggleClass('sidebar--hide');
     });
+    
+    if (window.innerWidth < 1260) {
+      $('.sidebar').addClass('sidebar--hide');
+    };
+    if (window.innerWidth < 480) {
+      $('.sidebar__btn').addClass('sidebar__btn--mobile');
+    }
   </script>
 </body>
 </html>
