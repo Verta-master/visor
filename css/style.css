@@ -22,6 +22,12 @@
   font-style: normal;
   src: url("../fonts/gothapromed.woff2") format("woff2"), url("../fonts/gothapromed.woff") format("woff");
 }
+@font-face {
+  font-weight: 900;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  src: url("../fonts/gothaprobla.woff2") format("woff2"), url("../fonts/gothaprobla.woff") format("woff");
+}
 /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
 /**
  * 1. Change the default font family in all browsers (opinionated).
@@ -470,6 +476,11 @@ button {
   right: 0;
   z-index: 100;
 }
+.header--internal {
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(#000c3d), color-stop(70%, #2b47af));
+  background-image: linear-gradient(to right, #000c3d 0%, #2b47af 70%);
+}
 .header__langs {
   position: absolute;
   right: 20px;
@@ -479,7 +490,15 @@ button {
   display: flex;
 }
 .header__lang {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-left: 5px;
   width: 36px;
   height: 36px;
@@ -488,7 +507,7 @@ button {
   font-size: 18px;
   color: #76b7e8;
   text-align: center;
-  line-height: 36px;
+  line-height: 1;
   border-radius: 50%;
   border: 2px solid rgba(255, 255, 255, 0);
   -webkit-transition: ease-out 0.3s;
@@ -670,6 +689,14 @@ button {
   line-height: 1;
   letter-spacing: -0.01em;
 }
+h1 {
+  margin-bottom: 65px;
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  font-weight: 900;
+  font-size: 24px;
+  color: #154c8d;
+  text-transform: uppercase;
+}
 .subscribe {
   min-height: 398px;
   padding-top: 160px;
@@ -694,6 +721,12 @@ button {
 .footer .header__langs {
   bottom: 28px;
   top: auto;
+}
+.footer--internal {
+  min-height: auto;
+  padding-top: 10px;
+  background-image: none;
+  background-color: #5b5b5b;
 }
 .map {
   position: relative;
@@ -921,6 +954,40 @@ button {
 .feedback__btn:hover,
 .feedback__btn:active {
   opacity: 0.85;
+}
+.info {
+  padding-top: 65px;
+  padding-bottom: 60px;
+}
+.info__text {
+  font-family: "Gotham Pro", "Arial", sans-serif;
+  color: #5b5b5b;
+  font-size: 18px;
+  font-weight: 500;
+}
+.info__text ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 21px;
+}
+.info__text ul li::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 9px;
+  height: 9px;
+  background-color: #76b7e8;
+  border-radius: 50%;
+}
+.info__img {
+  margin-top: 35px;
+  margin-bottom: 25px;
+}
+.info__img img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 @media (max-width: 1260px) {
   .footer {
