@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta  name="viewport" content="width=device-width,initial-scale=1">
+  <title>Neurovisor</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <header class="header header--internal">
+    <div class="wrapper wrapper--menu">
+      <a href="index.html" class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </a>
+      <nav class="menu">
+        <button type="button" class="menu__btn"></button>
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О системе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Направления разработки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">Демо-версия</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Партнёры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__langs">
+      <a href="#" class="header__lang header__lang--active">Ru</a>
+      <a href="#" class="header__lang">En</a>
+    </div>
+  </header>
+  
+  <main>
+    <div class="content-wrap">
+      <div class="content">
+        <div class="content__top">
+          <input type="file" id="file" class="content__input">
+          <label for="file" class="content__round content__round--load">Загрузить снимок</label>
+          <a href="#" class="content__round content__round--process">обработать снимок</a>
+        </div>
+        <div class="content__imgs">
+          <div class="content__field">
+            <figure class="content__img">
+              <img src="img/images/pic-1.jpg" alt="Загрузить снимок">
+            </figure>
+          </div>
+          <div class="content__field">
+            <figure class="content__img">
+              <img src="img/images/pic-2.jpg" alt="обработать снимок">
+            </figure>
+          </div>
+        </div>
+      </div>
+      
+      <div class="sidebar">
+        <button type="button" class="sidebar__btn" title="Показать/Скрыть"></button>
+        <div class="sidebar__wrap">
+          <div class="sidebar__login">
+            <a data-fancybox data-src="#reg" href="javascript:;" class="sidebar__link sidebar__link--enter">Вход</a>
+            <a href="#" class="sidebar__link">Регистрация</a>
+          </div>
+          
+          <form action="#" class="search">
+            <button type="submit" class="search__btn"></button>
+            <input type="text" class="search__input" placeholder="Поиск пациента...">
+          </form>
+          <div class="sidebar__person">
+            <p>Джигурда Н.Б.</p>
+            <span>27.03.1961 гр</span>
+          </div>
+        
+          <div class="history">
+            <p class="history__title">История снимков</p>
+            <div class="swiper-container history__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide history__slide">
+                  <ul class="history__list">
+                    <li class="history__item">
+                      <a href="#" class="history__link">
+                        <figure class="history__img">
+                          <img src="img/images/pic-1.jpg" alt="История снимков">
+                        </figure>
+                        <time datetime="2018-10-12">12.10.2018</time>
+                      </a>
+                    </li>
+                    <li class="history__item history__item--active">
+                      <a href="#" class="history__link">
+                        <figure class="history__img">
+                          <img src="img/images/pic-1.jpg" alt="История снимков">
+                        </figure>
+                        <time datetime="2018-07-31">31.07.2018</time>
+                      </a>
+                    </li>
+                    <li class="history__item">
+                      <a href="#" class="history__link">
+                        <figure class="history__img">
+                          <img src="img/images/pic-1.jpg" alt="История снимков">
+                        </figure>
+                        <time datetime="2018-04-17">17.04.2018</time>
+                      </a>
+                    </li>
+                    <li class="history__item">
+                      <a href="#" class="history__link">
+                        <figure class="history__img">
+                          <img src="img/images/pic-1.jpg" alt="История снимков">
+                        </figure>
+                        <time datetime="2018-10-12">12.10.2018</time>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-scrollbar history__scrollbar"></div>
+            </div>
+          </div>
+
+          <a data-fancybox data-src="#call" href="javascript:;" class="demo-btn">История болезни</a>
+          <a href="#" class="demo-btn">анализы</a>
+          <a href="#" class="demo-btn">нормативы</a>
+        </div>        
+      </div>
+    </div>
+  </main>
+  
+  <footer class="footer footer--internal">
+    <div class="wrapper wrapper--menu">
+      <div class="logo">
+        <img src="img/images/logo.png" alt="Logo">
+      </div>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#" class="menu__link">О системе</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Направления разработки</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link menu__link--active">Демо-версия</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Партнёры</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Новости</a>
+          </li>
+          <li class="menu__item">
+            <a href="#" class="menu__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__langs">
+      <a href="#" class="header__lang header__lang--active">Ru</a>
+      <a href="#" class="header__lang">En</a>
+    </div>
+  </footer>
+  
+  <!-- Modal windows -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">История болезни</p>
+    <p class="modal__person">Джигурда Н.Б. 27.03.1961 гр</p>
+    <p>История болезни стория болезни стория болезни стория болезнистория болезнистория болезни сториявцвцв стория болезнистория болезнистория болезни сториявцвцв стория болезнистория болезнистория болезни сториявцвцв стория болезнистория болезнистория болезни сториявцвцв</p>
+    <div class="content__imgs">
+      <div class="content__field">
+        <figure class="content__img">
+          <img src="img/images/pic-1.jpg" alt="Загрузить снимок">
+        </figure>
+      </div>
+      <div class="content__field">
+        <figure class="content__img">
+          <img src="img/images/pic-2.jpg" alt="обработать снимок">
+        </figure>
+      </div>
+    </div>
+  </div>
+  
+  <div style="display: none;" id="reg" class="reg">
+    <p class="modal__title">РЕГИСТРАЦИЯ</p>
+    <form action="#" class="reg__form">
+      <div class="reg__field reg__field--name">
+        <input type="text" class="reg__input" placeholder="Имя пользователя">
+      </div>
+      <div class="reg__field reg__field--password">
+        <input type="password" class="reg__input" placeholder="Пароль">
+      </div>
+      <button type="submit" class="reg__btn">Войти</button>
+      <input type="checkbox" id="checkbox" class="reg__checkbox" checked>
+      <label for="checkbox" class="reg__label">Запомнить</label>
+      <a href="#" class="reg__link">Забыли пароль?</a>
+    </form>
+  </div>
+  
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
+  
+  <!-- Mobile menu -->
+  <script>
+    $('.menu__btn').click(function() {
+      $('.menu').toggleClass('menu--opened');
+      $('.menu__list').slideToggle();
+    })
+  </script>
+  
+  <!-- Scroll container -->
+  <script>
+    var swiper = new Swiper('.history__slider', {
+      direction: 'vertical',
+      slidesPerView: 'auto',
+      freeMode: true,
+      scrollbar: {
+        el: '.history__scrollbar',
+      },
+      mousewheel: true,
+    });
+  </script>
+  
+  <!-- Sidebar hide/show -->
+  <script>
+    $('.sidebar__btn').click(function() {
+      $('.sidebar').toggleClass('sidebar--hide');
+    });
+  </script>
+</body>
+</html>
